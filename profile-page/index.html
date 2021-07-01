@@ -65,28 +65,28 @@
             <!-- connection requests card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">2</span>
+                    <span id="requests" class="badge">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item">
+                    <li id="topline" class="card-list-item">
                         <span>
                             <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
                             Todd E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="removeLine">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="removeLine">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="check('#topline')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="deny('#topline')">
                         </span>
                     </li>
-                    <li class="card-list-item">
+                    <li id="bottomline" class="card-list-item">
                         <span>
                             <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
                             Phil E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="removeLine">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="removeLine">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="check('#bottomline')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="deny('#bottomline')">
                         </span>
                     </li>
                 </ul>
@@ -95,7 +95,7 @@
             <!-- your connections card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">500+</span>
+                    <span id="friends" class="badge">500</span>
                     <h3>Your Connections</h3>
                 </div>
                 <ul class="card-list">

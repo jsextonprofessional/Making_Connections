@@ -7,8 +7,21 @@ function changeName() {
 }
 
 // Clicking either x or check icon will remove line from the requests list
-function removeLine(element) {
-    element.remove();
-}
 // Change number of Connection Requests
 // Change number of Your Connections
+
+var reqs = document.querySelector("#requests");
+var frenz = document.querySelector("#friends");
+
+function check(id){
+    var element = document.querySelector(id);
+    element.remove();
+    reqs.innerText--;
+    frenz.innerText++;
+}
+
+function deny(id){
+    var element = document.querySelector(id);
+    element.remove();
+    reqs.innerText--;
+}
